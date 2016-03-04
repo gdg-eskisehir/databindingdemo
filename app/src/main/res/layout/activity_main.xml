@@ -23,6 +23,7 @@
             android:id="@+id/surname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/name"
             android:text="@{user.surname}"/>
     </RelativeLayout>
 

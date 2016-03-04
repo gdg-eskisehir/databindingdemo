@@ -13,8 +13,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+        User user = new User();
+        user.setName("mert");
+        user.setSurname("simsek");
+
+        updateUser(user);
     }
 
     private void updateUser(User user) {
